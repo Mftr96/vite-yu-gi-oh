@@ -24,8 +24,17 @@ Ragionate bene sul da farsi e seguite con attenzione le milestone. Può aiutarvi
 Buon lavoro a tutti!
 --------------------------------
 esecuzione:
+
 milestone 1:creare elementi necessari al progetto
 al progetto serve:
 -un file store.js da mettere in una cartella data. Il file avrà al suo interno l'array dato in traccia fatto
 due componenti vue(CardList e SingleCard) creato
 
+-dopo la creazione degli elementi necessari, andare a ricreare il mockup servendosi dei components.
+In questo caso, bisogna avere chiaro lo schema per ricreare il mockup, quindi avere chiaro come strutturare il container mettendo in fila le carte e come ciclare sulla carta capendo come disporre gli elementi della carta.
+cosa mi serve:
+-div container in CardList fatto
+-struttura carta in SingleCard()fatto
+-creazione ciclo v-for per stampare le carte fatto
+come ciclo?
+ciclo sulla carta singola e poi inserisco in pagina(fare domanda a lezione in caso su come ciclare da padre e passare il componente di CardList a SingleCard del ciclo)

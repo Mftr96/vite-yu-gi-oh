@@ -8,9 +8,10 @@ export default{
   components:{
     CardList,
     SingleCard,
+    
   },
   data (){
-    return{
+    return{dati
 
     }
   },

@@ -2,7 +2,8 @@
 al cambiamento dell'array, vengono cambiati anche
  gli elementi che ne fanno uso in pagina
 */ 
-import {reactive} from 'vue';
+
+import { reactive } from 'vue';
 
 //array dati carte
 let dati = [
