@@ -38,3 +38,10 @@ cosa mi serve:
 -creazione ciclo v-for per stampare le carte fatto
 come ciclo?
 ciclo sulla carta singola e poi inserisco in pagina(fare domanda a lezione in caso su come ciclare da padre e passare il componente di CardList a SingleCard del ciclo)
+-------------------------
+bonus 1:
+andare a richiamare tramite axios l'API e stampare l'array e ciclare con l''array nuovo
+cosa mi serve
+-link axios in HTML fatto
+-scrivere funzione axios nel mounted di app.vue
+ 

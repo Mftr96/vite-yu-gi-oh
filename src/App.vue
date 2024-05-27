@@ -19,7 +19,15 @@ export default{
 
   },
   mounted(){
-
+    //funzione che svuota array all'avvio e pusha i dat ipresi dall'API
+    axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=0')
+    .then((response)=>{
+        const AxCardList=response.data;
+        console.log(AxCardList);
+        this.card=[];
+        this.card.push(AxCardList)
+        console.log(this.card);
+    })
   }
 }
 </script>
