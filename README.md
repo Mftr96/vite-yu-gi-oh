@@ -1,7 +1,30 @@
-# Vue 3 + Vite
+CONSEGNA
+Create un nuovo progetto utilizzando Vite e Vue 3 e definite i componenti necessari per strutturare il layout come da screenshot allegato.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+ MILESTONE 1
+Dopo aver creato il progetto ragionate sui componenti e cercate di ricalcare quanto visto nei live coding di oggi e venerdì.
+Come dati utilizzate l'array in allegato. Potete incollarlo nel vostro data, oppure importare il file come visto oggi.
+Avrete un componente padre (es. CardsList) che dichiara l'array nel data e vi cicla per passare il singolo dato al figlio (es. SingleCard) tramite le sue props.
 
-## Recommended IDE Setup
+ MILESTONE 2
+Spostate i dati in questione in uno store.js, all'interno di un array che chiamerete ad esempio carte.
+Il componente padre (es. CardsList) richiama store.carte e vi cicla per passare il singolo dato al figlio (es. SingleCard).
+Vi chiederete cosa cambia rispetto a prima? Cosa ci guadagno? Nulla! Ma ci tornerà utile per bonus con axios :
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+BONUS
+Recuperate questi dati tramite una chiamata axios da effettuare al mount dell'applicazione.
+Per oggi possiamo importare axios tramite CDN, come al solito.
+Questa chiamata andrà a scrivere su store.carte che quindi dovrà essere dichiarato come array vuoto nello store.js
+L'api da richiamare si trova qui.
+:regalo: BONUS #2
+L'indirizzo che vi ho fornito stampa solo le prime 10 carte. Se volessi visualizzare le prime 20 carte? Oppure le prime 20 carte a partire dalla 15esima? Guardate bene l'indirizzo e fate qualche prova :occhiolino:
+Qui trovate anche la documentazione delle API se volete capire bene quali dati aspettarvi.
+:razzo: CONSIGLI
+Ragionate bene sul da farsi e seguite con attenzione le milestone. Può aiutarvi un'occhiata al codice del live coding.
+Buon lavoro a tutti!
+--------------------------------
+esecuzione:
+milestone 1:creare elementi necessari al progetto
+al progetto serve:
+-un file store.js da mettere in una cartella data. Il file avrà al suo interno l'array dato in traccia 
+due componenti vue(CardList e SingleCard)
