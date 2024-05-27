@@ -26,5 +26,6 @@ Buon lavoro a tutti!
 esecuzione:
 milestone 1:creare elementi necessari al progetto
 al progetto serve:
--un file store.js da mettere in una cartella data. Il file avrà al suo interno l'array dato in traccia 
-due componenti vue(CardList e SingleCard)
+-un file store.js da mettere in una cartella data. Il file avrà al suo interno l'array dato in traccia fatto
+due componenti vue(CardList e SingleCard) creato
+
