@@ -11,23 +11,27 @@ export default{
   },
   data (){
     return{store,
+      searchType:"",
 
     }
   },
   methods:{
+    f_bottone(){
+      console.log(this.searchType)
+      axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=0&archetype='+this.searchType)
+    .then((response)=>{
+        const AxCardList=response.data.data;
+        console.log(AxCardList);
+        this.store.dati="";
+        this.store.dati=AxCardList
+    });
+
+    },
     
 
     },
   mounted(){
     //funzione che svuota array all'avvio e pusha i dat ipresi dall'API
-    axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=0')
-    .then((response)=>{
-        const AxCardList=response.data;
-        console.log(AxCardList);
-        this.card=[];
-        this.card.push(AxCardList)
-        console.log(this.card);
-    });
     //funzione che alla chiamata resituisce array con archetipi
     axios.get("https://db.ygoprodeck.com/api/v7/archetypes.php")
     .then((response)=>{
@@ -43,12 +47,12 @@ export default{
 
 <template>
   <h1>Yugi-oh API</h1>
-  <select name="archetype-select" id="select-name">
-    <option v-for="archetipi in store.archetipi" value="">
+  <select v-model="searchType" name="archetype-select" id="select-name">
+    <option v-for="archetipi in store.archetipi" :value="archetipi.archetype_name">
     {{archetipi.archetype_name}}
     </option>
   </select>
-  <button @click="">bottone archetipo</button>
+  <button @click="f_bottone()">bottone archetipo</button>
   <CardList/> 
 </template>
 
