@@ -1,6 +1,6 @@
 <script>
 import SingleCard from './SingleCard.vue'
-import dati from '../data/store.js';
+import datiReactive from '../data/store.js';
 
 export default{
 
@@ -10,7 +10,7 @@ export default{
     },
   data (){
     return{
-      dati,
+      datiReactive,
     }
   },
   methods:{

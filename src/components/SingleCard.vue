@@ -1,12 +1,12 @@
 <script>
-import dati from '../data/store.js';
+import store from '../data/store.js';
 
 export default{
  
   
   data (){
     //dati lo metto qui perchè non è un componente vue
-    return{dati,
+    return{store,
 
     }
   },
@@ -22,14 +22,12 @@ export default{
 </script>
 
 <template>
-  <div class="card " v-for="card in dati" >      
+  <div class="card " v-for="card in store.dati" >      
     <img :src="card.card_images[0].image_url" alt="">
     <div class="info-card">
       <h3>{{card.name}}</h3>
       <p>{{card.archetype}}</p>
     </div>
-
-
   </div>
   
 </template>

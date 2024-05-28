@@ -44,4 +44,36 @@ andare a richiamare tramite axios l'API e stampare l'array e ciclare con l''arra
 cosa mi serve
 -link axios in HTML fatto
 -scrivere funzione axios nel mounted di app.vue
- 
+------------------------------------------------------------------------------------------ 
+CONSEGNA SECONDO ES
+
+
+CONSEGNA
+Continuate a lavorare nella stessa repo di ieri. Oggi gli obiettivi sono:
+richiamare le card tramite axios (per chi non avesse fatto il bonus di ieri)    /FATTO
+aggiungere una select per filtrare i risultati in base all’archetipo
+
+
+ MILESTONE 0
+Assicuratevi di aver completato la consegna di ieri inclusi i bonus: dovrete avere le cards all'interno di un array dello store. Questo array va popolato grazie ad una chiamata axios fatta al caricamento di App.vue.
+
+
+ MILESTONE 1
+Aggiungete una select in pagina per scegliere l'archetipo.
+La select dovrà essere direttamente in App.vue e non in un componente.
+Le options della select verranno popolate dinamicamente, grazie a un array contenente tutti gli archetipi.
+Dove prendo gli archetipi? Con un'altra chiamata, sempre al caricamento di App.vue ma a questo endpoint. I dati vanno sempre nello store.
+
+ MILESTONE 2
+Quando l'utente seleziona un valore dalla lista, dovrete aggiornare la lista di cards che avete in store.
+Vuol dire che effettuerete una chiamata alle API (simile a quella iniziale) ma con l'archetipo selezionato.
+
+BONUS
+Creare un componente che mostri il numero totale di risultati ottenuti.
+-------------------
+milesone 1:
+creazione del select nell'app principale(app.vue)e creazione tramite ciclo delle option tramite chiamata axios(installare axios con npm).
+cosa serve:
+-axios installato tramite npm
+-creazione tag select in app.vue
+-ciclo tag option con dentro l'archetipo delle carte 
