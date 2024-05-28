@@ -47,6 +47,7 @@ export default{
 
 <template>
   <h1>Yugi-oh API</h1>
+  <h3>hai trovato{{ store.dati.length }}carte</h3>
   <select v-model="searchType" name="archetype-select" id="select-name">
     <option v-for="archetipi in store.archetipi" :value="archetipi.archetype_name">
     {{archetipi.archetype_name}}
